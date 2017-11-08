@@ -1,2 +1,2 @@
-# Портал e-schools
+# Портал e-school
 ---
