@@ -1,4 +1,7 @@
 @import "index/index";
+@import "common_blocks/_footer.scss";
+@import "common_blocks/_header.scss";
+@import "common_blocks/_sidebar.scss";
 
 @media (max-width: 1200px) {
     @import "index/index-max-1200";
@@ -10,4 +13,7 @@
 
 @media (max-width: 767px) {
     @import "index/index-max-767";
+}
+@media (max-width: 500px) {
+    @import "index/index-max-500";
 }

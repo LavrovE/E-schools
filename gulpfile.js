@@ -7,7 +7,9 @@ var gulp            = require('gulp'),
     cssnano         = require('gulp-cssnano'),
     del             = require('del'),
     autoprefixer    = require('gulp-autoprefixer'),
+    gulpImport      = require('gulp-html-import'),
     sourcemaps      = require('gulp-sourcemaps');
+
 
 gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.scss')
@@ -38,6 +40,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('app/js'));
 });
 
+gulp.task('import', function () {
+    gulp.src('app/index.html')
+        .pipe(gulpImport('app/layouts/'))
+        .pipe(gulp.dest('app/dist'));
+})
+
 gulp.task('css-libs', ['sass'], function() {
     return gulp.src('app/css/libs.css')
         .pipe(cssnano())
@@ -45,9 +53,13 @@ gulp.task('css-libs', ['sass'], function() {
         .pipe(gulp.dest('app/css'));
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'import'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']);
+    gulp.watch('app/*.html', ['import']);
+    gulp.watch('app/layouts/*.html', ['import']);
     gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/layouts/*.html', browserSync.reload);
+    gulp.watch('app/dist/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 

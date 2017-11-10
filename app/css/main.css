@@ -78,16 +78,8 @@
   margin-top: 100px;
 }
 
-::-moz-selection {
-  background: rgba(51, 177, 133, 0.5);
-}
-
-::selection {
-  background: rgba(51, 177, 133, 0.5);
-}
-
 * {
-  font-family: "ProximaNova", Serif;
+  font-family: "Ubuntu-R", Serif;
 }
 
 .container-fluid {
@@ -104,6 +96,47 @@
 
 .align-center {
   text-align: center;
+}
+
+.myblock {
+  background-color: blue;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
+  -ms-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
+  -o-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
+  box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
+}
+
+.myblock:hover {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: #2b542c;
+}
+
+.header {
+  background: yellow;
+}
+
+.sidebar {
+  background-color: #00b3ee;
+}
+
+@font-face {
+  font-family: 'Ubuntu-B';
+  src: url(../fonts/Ubuntu-B.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu-R';
+  src: url(../fonts/Ubuntu-R.ttf);
+}
+
+@font-face {
+  font-family: 'Ubuntu-L';
+  src: url(../fonts/Ubuntu-L.ttf);
 }
 
 /*# sourceMappingURL=../css/main.css.map */

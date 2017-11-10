@@ -1,0 +1,9 @@
+.myblock{
+  background-color: blue;
+
+  &:hover{
+    background-color: yellow;
+  }
+  @include border-radius( $input-radius );
+  @include box-shadow( $input-shadow );
+}
