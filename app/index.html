@@ -7,10 +7,10 @@
         <div class="content__wrapper">
             <div class="myblock">
                 <div id="main">
-                    <form action="#" method="post" class="customForm">
+                    <form action="#" method="post" class="customForm" id="myForm">
                         <h2>Input:</h2>
                         <div class="input">
-                            <input type="text" id="text" name="text"/>
+                            <input type="text" id="text" name="email"/>
                         </div>
 
                         <h2>Текстовое поле:</h2>
@@ -99,5 +99,14 @@
 
 </div>
 @import "foot.html"
-
+<script>
+    $('#myForm').validate({
+       rules: {
+           email:{
+               required: true,
+               email: true
+           }
+       }
+    });
+</script>
 

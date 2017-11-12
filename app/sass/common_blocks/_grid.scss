@@ -1,0 +1,18 @@
+.container{
+  display: block;
+  margin: 0 auto;
+  max-width: 1330px;
+}
+aside{
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+.main_content{
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+.allwrap{
+  //white-space: nowrap;
+}
