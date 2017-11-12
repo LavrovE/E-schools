@@ -11,3 +11,15 @@
     -o-box-shadow: $shadow;
     box-shadow: $shadow;
 }
+@mixin border-top-left-radius($top-left-radius) {
+    -webkit-border-top-left-radius: $top-left-radius;
+    -moz-border--top-left-radius: $top-left-radius;
+    -ms-border-top-left-radius: $top-left-radius;
+    border-top-left-radius: $top-left-radius;
+}
+@mixin border-top-right-radius($top-right-radius) {
+    -webkit-border-top-right-radius: $top-right-radius;
+    -moz-border--top-right-radius: $top-right-radius;
+    -ms-border-top-right-radius: $top-right-radius;
+    border-top-right-radius: $top-right-radius;
+}

@@ -61,6 +61,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'import'], function()
     gulp.watch('app/layouts/*.html', browserSync.reload);
     gulp.watch('app/dist/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/dist/*.html', browserSync.reload);
 });
 
 gulp.task('glyphicon-bootstrap', function() {

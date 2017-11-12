@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -98,18 +99,262 @@
   text-align: center;
 }
 
-.myblock {
-  background-color: blue;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
-  -ms-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
-  -o-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
-  box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
+#myTabs li {
+  display: inline-block;
 }
 
-.myblock:hover {
-  background-color: yellow;
+.myblock {
+  background-color: blue;
+}
+
+body {
+  margin: 0;
+  font-size: 0px;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a, p, span, i {
+  font-size: 14px;
+  margin: 0px;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  color: #000;
+  background: #ff0;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  display: block;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid #c0c0c0;
+}
+
+legend {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #4f99ef;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border--top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border--top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.in {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
 }
 
 .footer {
@@ -122,6 +367,274 @@
 
 .sidebar {
   background-color: #00b3ee;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1330px;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+
+.main_content {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Sprite */
+.radio, .drop li, .slct, .check {
+  background: url(../img/sprite.png) 0 0 no-repeat;
+}
+
+/* Form */
+.customForm {
+  color: #444444;
+  width: 320px;
+  font: 13px/1.8 Helvetica;
+}
+
+.customForm input, .customForm textarea {
+  font: 13px Helvetica;
+}
+
+/* = Input */
+.customForm input {
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.customForm textarea {
+  display: block;
+  /* = Убираем скролл */
+  overflow: auto;
+  /* = Убираем увеличение */
+  resize: none;
+  width: 300px;
+  height: 50px;
+  /* = Добавим фон, рамку, отступ */
+  background: #f6f6f6;
+  border: 1px solid #cecece;
+  -webkit-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0;
+  padding: 8px 0 8px 10px;
+}
+
+/* = Переключатели Radio Button */
+.radio {
+  display: block;
+  height: 25px;
+  background-position: 0 -56px;
+  coloR: #444;
+  cursor: pointer;
+  text-indent: 22px;
+  font-size: 13px;
+}
+
+.radio.active {
+  background-position: 0 -86px;
+}
+
+.radio.error {
+  border-color: #ff0000;
+}
+
+/*	=	CheckBox */
+/* Стилизируем чекбокс, точнее скрываем его */
+.check input[type=checkbox] {
+  position: absolute;
+  left: -10000px;
+}
+
+.check {
+  background-position: 0 3px;
+  padding-left: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.check.active {
+  background-position: 0 -27px;
+}
+
+/*	=	Select */
+.slct {
+  display: block;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #cecece;
+  background-color: #F6F6f6;
+  width: 285px;
+  padding: 4px 15px 4px 10px;
+  color: #444;
+  background-position: 290px -145px;
+  /*
+      Супер финт обрезаем текст
+      чтобы не вылезал за рамку
+  */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.slct.active {
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+
+.drop {
+  padding: 0;
+  width: 310px;
+  border: 1px solid #cecece;
+  border-top: none;
+  display: none;
+  position: absolute;
+  background: #fff;
+}
+
+.drop li {
+  list-style: none;
+  border-top: 1px dotted #e8e8e8;
+  cursor: pointer;
+  display: block;
+  color: #444;
+  padding: 4px 15px 4px 25px;
+  background-position: 10px -119px;
+}
+
+.drop li:hover {
+  background-color: #e8e8e8;
+  color: #222;
+}
+
+/*	=	File Load */
+/* Стили для контейнера */
+.file-load-block {
+  width: 310px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* работаем с инпутом который конкретно file */
+.file-load-block input[type=file] {
+  /* делаем кроссбраузерную прозрачность */
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* Позиционируем абсолютно отсносительно контейнера по правому краю */
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*
+  Задаем высоту и делаем шрифт огромным
+  для того чтобы кнопка "обзор" занимала все пространство контейнера
+  */
+  height: 35px;
+  font-size: 600px;
+  /* Ставим наш инпут поверх всего содержимого */
+  z-index: 2;
+  cursor: pointer;
+  width: auto;
+}
+
+/* Стилизируем инпут и кнопку которые под загрузчиком */
+.file-load-block input[type=text] {
+  z-index: 1;
+  width: 190px;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.file-load-block button {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 90px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: inset 0 2px 2px #ccc;
+          box-shadow: inset 0 2px 2px #ccc;
+}
+
+.file-load-block .button-hover {
+  -webkit-box-shadow: 0 0 2px #ccc;
+          box-shadow: 0 0 2px #ccc;
+}
+
+/*	=	Reset Form */
+.reset-form button {
+  width: 90px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: inset 0 2px 2px #ccc;
+          box-shadow: inset 0 2px 2px #ccc;
+  cursor: pointer;
+}
+
+.reset-form button:hover {
+  -webkit-box-shadow: 0 0 2px #ccc;
+          box-shadow: 0 0 2px #ccc;
+}
+
+.reset-form button:active {
+  margin-top: 1px;
+  margin-bottom: -1px;
+  zoom: 1;
+}
+
+/*	=	Form Send */
+.sendmail button {
+  width: 90px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: inset 0 2px 2px #ccc;
+          box-shadow: inset 0 2px 2px #ccc;
+  cursor: pointer;
+}
+
+.sendmail button:hover {
+  -webkit-box-shadow: 0 0 2px #ccc;
+          box-shadow: 0 0 2px #ccc;
+}
+
+.sendmail button:active {
+  margin-top: 1px;
+  margin-bottom: -1px;
+  zoom: 1;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: block;
+    margin: 0 auto;
+    max-width: 860px;
+  }
 }
 
 @font-face {

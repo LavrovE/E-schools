@@ -2,6 +2,8 @@
 @import "common_blocks/_footer.scss";
 @import "common_blocks/_header.scss";
 @import "common_blocks/_sidebar.scss";
+@import "common_blocks/_grid.scss";
+@import "common_blocks/_inputs.scss";
 
 @media (max-width: 1200px) {
     @import "index/index-max-1200";
