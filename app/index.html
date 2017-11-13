@@ -10,12 +10,12 @@
                     <form action="#" method="post" class="customForm" id="myForm">
                         <h2>Input:</h2>
                         <div class="input">
-                            <input type="text" id="text" name="email"/>
+                            <input type="text" id="text" name="email" placeholder=" test"/>
                         </div>
 
                         <h2>Текстовое поле:</h2>
                         <div>
-                            <textarea id="textarea"></textarea>
+                            <textarea placeholder=" Tекст сообщения"></textarea>
                         </div>
 
                         <h2>Select:</h2>
@@ -67,27 +67,37 @@
                             </div>
                         </div>
 
-                        <div class="fileload">
+                        <div class="fileload upload">
                             <h2>Загрузка файла:</h2>
-                            <div class="file-load-block">
-                                <input type="file" value="" id="file"/>
-                                <div class="fileLoad">
-                                    <input type="text" value="Select file"/>
-                                    <button>Select file</button>
+                            <div class="file-load-block upload__block">
+                                <input type="file" value="" id="file" class="upload__input-hidden"/>
+                                <div class="fileLoad upload__new">
+                                    <button class="upload__btn">Выберите файл</button>
+                                    <input type="text" value="Select file" class="upload__input"/>
+
                                 </div>
                             </div>
                         </div>
-
-                        <div class="reset-form">
-                            <h2>Сбрасываем поля формы</h2>
-                            <button>Сброс</button>
-                        </div>
-
                         <div class="sendmail">
                             <h2>Отправляем форму:</h2>
                             <button type="submit">Отправить</button>
                         </div>
 
+                    </form>
+                    <form>
+                        <div class="select language">
+                            <a href="#" class="slct language__selected">Укр</a>
+                            <ul class="drop language__items">
+                                <li class="language__item">Красивый(ая)</li>
+                                <li class="language__item">Умный(ая)</li>
+                                <li class="language__item">Коммуникабульный(ая)</li>
+                                <li class="language__item">Скромный(ая)</li>
+                            </ul>
+                            <input type="hidden" id="select"/>
+                        </div>
+                        <button class="btn__small">1-й семестр</button>
+                        <button class="btn__normal">написати</button>
+                        <button class="btn__large">підключити школу</button>
                     </form>
                 </div>
             </div>
@@ -99,14 +109,5 @@
 
 </div>
 @import "foot.html"
-<script>
-    $('#myForm').validate({
-       rules: {
-           email:{
-               required: true,
-               email: true
-           }
-       }
-    });
-</script>
+
 

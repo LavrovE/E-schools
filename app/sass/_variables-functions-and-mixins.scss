@@ -1,5 +1,6 @@
 //Colors
 $main-color: #393d45;
+$text-color: #55687c;
 $background-color: #3a5d82;
 $white-color: #ffffff;
 $info-background: #28415b;
@@ -8,13 +9,24 @@ $btn-color: #4f99ef;
 $btn-color-enabled: #3b7ac2;
 $btn-color-disabled: #a2c6f0;
 //input colors
+$success-color: #14ff2c;
 $error-color: #f24841;
 $input-background: #eaf1f9;
 $input-background-hover: #d9e4f0;
+$input-border: 1px solid #eaf1f9;
+$input-border-focused: 1px solid #c5cfda;
+$placeholder-color: #a5b5c5;
+$language-dark: #1d2e41;
+//input styles
+
+$input-padding: 11px 15px;
+$btn-padding-l: 11px 15px;
+$btn-padding-m: 11px 14px;
+$btn-padding-s: 11px 12px;
 //Fonts
 $main-font: 'Ubuntu-R';
-$bold-color: 'Ubuntu-B';
-$light-color: 'Ubuntu-L';
+$bold-font: 'Ubuntu-B';
+$medium-font: 'Ubuntu-M';
 //Font-size and lineHeight
 $h1-size: 24px;
 $h1-height: 36px;

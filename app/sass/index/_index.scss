@@ -3,9 +3,8 @@
   display: inline-block;
 }
 
-
 .myblock {
-  background-color: blue;
+  //background-color: blue;
 
   &:hover {
     //background-color: yellow;
@@ -14,12 +13,60 @@
   //@include box-shadow($input-shadow);
 }
 
+//standart values
+::-webkit-input-placeholder {
+  color: $placeholder-color;
+  font-family: $main-font;
+  font-size: $main-size;
+  line-height: $main-Height;
+}
+
+::-moz-placeholder {
+  color: $placeholder-color;
+  font-family: $main-font;
+  font-size: $main-size;
+  line-height: $main-Height;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: $placeholder-color;
+  font-family: $main-font;
+  font-size: $main-size;
+  line-height: $main-Height;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $placeholder-color;
+  font-family: $main-font;
+  font-size: $main-size;
+  line-height: $main-Height;
+}
+
+h1, .h1 {
+  font-family: $medium-font;
+  font-size: $h1-size;
+  line-height: $h1-height;
+}
+
+h2, .h2 {
+  font-family: $medium-font;
+  font-size: $h1-size;
+  line-height: $h1-height;
+}
+
+h3, .h3 {
+  font-family: $main-font;
+  font-size: $h1-size;
+  line-height: $h1-height;
+}
+
 //bootstrap with fixes
 body {
   margin: 0;
   font-size: 0px;
 }
-
 
 audio,
 canvas,
@@ -44,17 +91,20 @@ a {
   color: $white-color;
   cursor: pointer;
 }
-h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   margin: 0px;
   padding: 0px;
 }
+
 a:active,
 a:hover {
   outline: 0;
 }
-a, p, span, i{
+
+a, p, span, i {
   font-size: $main-size;
-  margin:0px;
+  margin: 0px;
 }
 
 abbr[title] {
@@ -69,7 +119,6 @@ strong {
 dfn {
   font-style: italic;
 }
-
 
 mark {
   color: #000;
@@ -255,9 +304,11 @@ th {
 ul {
   list-style: none;
 }
+
 .tab-content > .tab-pane {
   display: none;
 }
+
 .tab-content > .active {
   display: block;
 }
