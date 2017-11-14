@@ -22,9 +22,9 @@
     display: inline-block;
     vertical-align: top;
   }
-  &__list{
+  &__list {
 
-    &__item{
+    &__item {
       text-align: left;
       a {
         padding: 10px 0px;
@@ -32,11 +32,21 @@
         &.bold {
           font-family: $bold-font;
         }
+      }
+
     }
 
   }
 
 }
 
+.bottom-bar {
+  p {
+    font-size: $breadcrumbs-size;
+    color: $white-color;
+    opacity: 0.6;
+  }
+  text-align: center;
+  background-color: $info-background;
+  padding: 20px 0px;
 }
-

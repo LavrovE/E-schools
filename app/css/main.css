@@ -485,6 +485,18 @@ ul {
   font-family: "Ubuntu-B";
 }
 
+.bottom-bar {
+  text-align: center;
+  background-color: #28415b;
+  padding: 20px 0px;
+}
+
+.bottom-bar p {
+  font-size: 12px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
 .header {
   background: #3a5d82;
 }
