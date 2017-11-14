@@ -12,7 +12,9 @@
   //@include border-radius($input-radius);
   //@include box-shadow($input-shadow);
 }
-
+.relative{
+  position: relative;
+}
 //standart values
 ::-webkit-input-placeholder {
   color: $placeholder-color;

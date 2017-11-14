@@ -1,3 +1,92 @@
 .header {
-  background: yellow;
+  background: $background-color;
+  //line-height: $header-height;
+
+  .container > div {
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  &__right {
+    width: 40%;
+  }
+  &__left {
+    width: 60%;
+    padding-left: 125px;
+  }
+  &__right > div > div {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  &__school {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 0px 40px;
+    line-height: $header-height;
+    background-color: $btn-color;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      height: 100%;
+      top: 0px;
+      position: absolute;
+      left: 0px;
+      border-style: solid;
+      border-width: 50px 26px 0 0;
+      border-color: $background-color transparent transparent transparent;
+      line-height: 0px;
+      _border-color: $background-color #000000 #000000 #000000;
+      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+    &:after {
+      content: '';
+      width: 0px;
+      bottom: 0px;
+      height: 0px;
+      position: absolute;
+      right: 0px;
+      border-style: solid;
+      border-width: 0 0 50px 26px;
+      border-color: transparent transparent $background-color transparent;
+      line-height: 0px;
+      _border-color: #000000 #000000 $background-color #000000;
+      _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+    &:hover {
+      background-color: $btn-color-enabled;
+    }
+  }
+
+}
+
+.profile_mini {
+  &_photo {
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &_messages {
+    margin-right: 22px;
+  }
+
+  &_user {
+    //background: url(../img/sprite.png) 0 0 no-repeat;
+    //background-position: 94px -170px;
+    //padding-right: 12px;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+  }
+  &_settings {
+    margin-right: 15px;
+  }
 }

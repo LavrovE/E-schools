@@ -16,13 +16,13 @@ $input-background-hover: #d9e4f0;
 $input-border: 1px solid #eaf1f9;
 $input-border-focused: 1px solid #c5cfda;
 $placeholder-color: #a5b5c5;
-$language-dark: #1d2e41;
 //input styles
-
 $input-padding: 11px 15px;
-$btn-padding-l: 11px 15px;
-$btn-padding-m: 11px 14px;
-$btn-padding-s: 11px 12px;
+$search-width: 214px;
+//language
+$language-dark: #1d2e41;
+$language-padding: 7px 23px 7px 8px;
+$language-minwidth: 58px;
 //Fonts
 $main-font: 'Ubuntu-R';
 $bold-font: 'Ubuntu-B';
@@ -36,19 +36,25 @@ $main-size: 14px;
 $main-Height: 18px;
 $breadcrumbs-size: 12px;
 $breadcrumbs-height: 18px;
+$search-height: 36px;
+$header-height: 50px;
 //borders and shadows
 $input-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
 $input-radius: 5px;
-
+$search-radius: 18.5px;
 
 $i: 10;
 @while $i < 101 {
-    .mb-#{$i} { margin-bottom: $i + px; }
-    $i: $i + 10;
+  .mb-#{$i} {
+    margin-bottom: $i + px;
+  }
+  $i: $i + 10;
 }
 
 $i: 10;
 @while $i < 101 {
-    .mt-#{$i} { margin-top: $i + px; }
-    $i: $i + 10;
+  .mt-#{$i} {
+    margin-top: $i + px;
+  }
+  $i: $i + 10;
 }

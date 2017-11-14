@@ -15,6 +15,16 @@
 /* = Input */
 input, textarea, .slct {
   font-size: $main-size;
+  color: $text-color;
+  line-height: $main-Height;
+}
+
+*:focus {
+  outline: none;
+}
+
+.custom-input, .custom-textarea, .slct {
+  font-size: $main-size;
   line-height: $main-Height;
   background-color: $input-background;
   font-family: $main-font;
@@ -32,11 +42,12 @@ input, textarea, .slct {
   }
 
 }
+
 .valid {
 
 }
 
-button {
+.custom-button {
   font-size: $main-size;
   line-height: $main-Height;
   //background-color: $white-color;
@@ -46,10 +57,20 @@ button {
   //color: $btn-color;
   //border-color: $btn-color;
   padding: $input-padding;
-  &:hover{
+  &:hover {
     //background-color: $btn-color;
     //color: $white-color;
   }
+}
+
+button {
+  padding: $input-padding;
+  font-size: $main-size;
+  line-height: $main-Height;
+  cursor: pointer;
+  background-color: $white-color;
+  font-family: $main-font;
+  border: 1px solid $main-color;
 }
 
 .upload__block {
@@ -125,7 +146,7 @@ textarea {
 /*	=	Select */
 .slct {
   display: block;
-  background-position: 290px -145px;
+  background-position: 290px -142px;
 
   /*
       Супер финт обрезаем текст
@@ -140,6 +161,30 @@ textarea {
 
 .slct.active {
 
+}
+
+.custom-select {
+  padding: 0;
+  border-top: none;
+  display: none;
+  background: $input-background;
+  border-radius: $input-radius;
+  @include box-shadow($input-shadow);
+  &__li {
+    list-style: none;
+    cursor: pointer;
+    display: block;
+    color: #444;
+    font-size: $main-size;
+    padding: $input-padding;
+    background-image: none;
+    -moz-background-image: none;
+    -o-background-image: none;
+    -webkit-background-image: none;
+    &:hover {
+      background-color: $input-background-hover;
+    }
+  }
 }
 
 .drop {
@@ -194,57 +239,194 @@ textarea {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   display: inline-block;
-  border-color: $btn-color;
-  &.button-hover{
+  border: 1px solid $btn-color;
+  &.button-hover {
     background-color: $btn-color;
     color: $white-color;
   }
 }
-.btn{
-  &__large{
+
+.btn {
+  &__large {
     border-color: $btn-color;
     background-color: $btn-color;
     color: $white-color;
     text-transform: uppercase;
-    padding: $btn-padding-l;
-    &:hover{
+    padding: $input-padding;
+    border: none;
+    @include border-radius($input-radius);
+    &:hover {
       background-color: $btn-color-enabled;
     }
   }
-  &__normal{
+  &__normal {
     border-color: $btn-color;
     background-color: $btn-color;
     color: $white-color;
     text-transform: uppercase;
-    padding: $btn-padding-m;
-    &:hover{
+    padding: $input-padding;
+    border: none;
+    @include border-radius($input-radius);
+    &:hover {
       background-color: $btn-color-enabled;
     }
   }
-  &__small{
+  &__small {
     border-color: $btn-color;
     background-color: $btn-color;
     color: $white-color;
-    padding: $btn-padding-s;
-    &:hover{
+    padding: $input-padding;
+    border: none;
+    @include border-radius($input-radius);
+    &:hover {
       background-color: $btn-color-enabled;
     }
   }
 }
+
 .file-load-block .button-hover {
   box-shadow: 0 0 2px #ccc;
 }
 
-.language{
-  &__selected{
-    background-color: $info-background;
+.language {
+  display: inline-block;
+  vertical-align: middle;
+  &__selected {
+    background: url(../img/sprite.png) 0 0 no-repeat;
+    background-color: transparent;
     color: $white-color;
+    border: none;
+    display: block;
+    width: 100%;
     font-size: $main-size;
+    //padding: $language-padding;
+    padding-left: 8px;
+    background-position: 40px -180px;
     &:focus {
-      background-color: $language-dark;
+      //background-color: $language-dark;
+      border: none;
+      background-color: transparent;
     }
     &:active {
-      background-color: $language-dark;
+      //background-color: $language-dark;
+      border: none;
+      background-color: transparent;
+    }
+
+  }
+  &__wrapper {
+    position: relative;
+    min-width: $language-minwidth;
+
+  }
+  &__items {
+    cursor: pointer;
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: 24px;
+    right: 0px;
+    background: $info-background;
+    padding: 0px;
+    @include box-shadow($input-shadow);
+    @include border-radius($input-radius);
+    min-width: $language-minwidth;
+
+  }
+  &__item {
+    color: $white-color;
+    text-align: center;
+    font-size: $main-size;
+    line-height: $main-Height;
+    padding: 7px 15.5px;
+    @include border-radius($input-radius);
+    &:first-child {
+      padding-top: 12px;
+    }
+    &:last-child {
+      padding-bottom: 12px;
+    }
+    &:hover {
+      background-color: $background-color;
     }
   }
 }
+
+.search {
+  @include border-radius($search-radius);
+  background-color: $info-background;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 15px;
+  &__input {
+    padding-left: 20px;
+    line-height: $search-height;
+    border: none;
+    @include border-radius(0px);
+    background-color: $info-background;
+    color: $white-color;
+    width: $search-width;
+
+  }
+  &__submit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 0px 0px;
+    border: none;
+    @include border-radius(0px);
+    background-color: $info-background;
+  }
+  ::-webkit-input-placeholder {
+    color: $white-color;
+    font-family: $main-font;
+    font-size: $main-size;
+    line-height: $search-height;
+  }
+
+  ::-moz-placeholder {
+    color: $white-color;
+    font-family: $main-font;
+    font-size: $main-size;
+    line-height: $search-height;
+  }
+
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: $white-color;
+    font-family: $main-font;
+    font-size: $main-size;
+    line-height: $search-height;
+  }
+
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: $white-color;
+    font-family: $main-font;
+    font-size: $main-size;
+    line-height: $search-height;
+  }
+}
+
+.top_messages {
+  &__span {
+    background: $error-color;
+    @include border-radius(200px);
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    font-size: $breadcrumbs-size;
+    color: $white-color;
+    height: auto;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
