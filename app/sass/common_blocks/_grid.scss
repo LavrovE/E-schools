@@ -6,10 +6,10 @@
 aside{
   display: inline-block;
   vertical-align: top;
-  width: 25%;
+  width: $aside-width;
 }
 .main_content{
-  width: 75%;
+  width: $container-width;
   display: inline-block;
   vertical-align: top;
 }

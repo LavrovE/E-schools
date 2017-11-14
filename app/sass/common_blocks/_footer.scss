@@ -1,3 +1,42 @@
-.footer{
-  background-color: #2b542c;
+.footer {
+  background-color: $background-color;
+  padding: 10px 0px;
+  &__columns {
+    text-align: center;
+  }
+  &__column {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 50px;
+  }
+  &__left {
+    width: $aside-width;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__img {
+    text-align: left;
+  }
+  &__right {
+    width: $container-width;
+    display: inline-block;
+    vertical-align: top;
+  }
+  &__list{
+
+    &__item{
+      text-align: left;
+      a {
+        padding: 10px 0px;
+        display: block;
+        &.bold {
+          font-family: $bold-font;
+        }
+    }
+
+  }
+
 }
+
+}
+

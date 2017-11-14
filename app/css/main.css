@@ -406,6 +406,8 @@ th {
 
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .tab-content > .tab-pane {
@@ -440,7 +442,47 @@ ul {
 }
 
 .footer {
-  background-color: #2b542c;
+  background-color: #3a5d82;
+  padding: 10px 0px;
+}
+
+.footer__columns {
+  text-align: center;
+}
+
+.footer__column {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 50px;
+}
+
+.footer__left {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__img {
+  text-align: left;
+}
+
+.footer__right {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__list__item {
+  text-align: left;
+}
+
+.footer__list__item a {
+  padding: 10px 0px;
+  display: block;
+}
+
+.footer__list__item a.bold {
+  font-family: "Ubuntu-B";
 }
 
 .header {
@@ -471,6 +513,7 @@ ul {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  margin-right: 12px;
   padding: 0px 40px;
   line-height: 50px;
   background-color: #4f99ef;
@@ -993,6 +1036,12 @@ textarea {
   line-height: 22px;
   text-align: center;
   vertical-align: middle;
+}
+
+#help img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 .search-icon img {
