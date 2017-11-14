@@ -318,3 +318,13 @@ ul {
 }
 
 
+//index styles starts here
+.content__wrapper{
+  @include box-shadow($input-shadow);
+  background-color: $white-color;
+  padding: $content-padding;
+  @include border-radius($input-radius);
+}
+.container.allwrap{
+  margin:20px auto;
+}
