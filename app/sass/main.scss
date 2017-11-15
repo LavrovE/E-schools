@@ -9,9 +9,9 @@
 body{
   color: $text-color;
   background-color: $wrapper-color;
-  *{
-    transition: 0.2s;
-  }
+}
+a {
+  transition: 0.2s;
 }
 .container-fluid {max-width: 1920px;}
 .align-right { text-align: right; }

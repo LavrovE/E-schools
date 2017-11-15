@@ -91,7 +91,7 @@ body {
   background-color: #f9fcff;
 }
 
-body * {
+a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -456,6 +456,42 @@ hr.underline {
   padding: 10px 0px;
 }
 
+.before_inline * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table {
+  display: table;
+  width: 100%;
+}
+
+.table__left {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table__right {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.edit {
+  color: #4f99ef;
+}
+
+.edit a {
+  color: #4f99ef;
+  font-size: 14px;
+  font-family: "Ubuntu-R";
+  line-height: 18px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 @media (max-width: 1200px) {
   .container {
     display: block;
@@ -536,8 +572,13 @@ hr.underline {
   opacity: 0.6;
 }
 
-.header {
+header {
   background: #3a5d82;
+}
+
+.header {
+  display: table;
+  width: 100%;
 }
 
 .header .container > div {
@@ -547,17 +588,14 @@ hr.underline {
 }
 
 .header__right {
-  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .header__left {
-  width: 60%;
-  padding-left: 125px;
-}
-
-.header__right > div > div {
+  display: table-cell;
   vertical-align: middle;
-  display: inline-block;
+  padding-left: 125px;
 }
 
 .header__school {
@@ -735,6 +773,8 @@ button {
   font-size: 14px;
   line-height: 18px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   background-color: #ffffff;
   font-family: "Ubuntu-R";
   border: 1px solid #393d45;
@@ -1005,6 +1045,7 @@ textarea {
   left: 0px;
   top: 24px;
   right: 0px;
+  z-index: 99;
   background: #28415b;
   padding: 0px;
   -webkit-box-shadow: 0px 2px 15px 0px rgba(36, 74, 119, 0.4);
@@ -1051,14 +1092,14 @@ textarea {
 }
 
 .search__input {
-  padding-left: 20px;
-  line-height: 36px;
   border: none;
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background-color: #28415b;
   color: #ffffff;
   width: 214px;
+  padding: 10px 0px;
+  padding-left: 20px;
 }
 
 .search__submit {
@@ -1078,28 +1119,24 @@ textarea {
   color: #ffffff;
   font-family: "Ubuntu-R";
   font-size: 14px;
-  line-height: 36px;
 }
 
 .search ::-moz-placeholder {
   color: #ffffff;
   font-family: "Ubuntu-R";
   font-size: 14px;
-  line-height: 36px;
 }
 
 .search :-moz-placeholder {
   color: #ffffff;
   font-family: "Ubuntu-R";
   font-size: 14px;
-  line-height: 36px;
 }
 
 .search :-ms-input-placeholder {
   color: #ffffff;
   font-family: "Ubuntu-R";
   font-size: 14px;
-  line-height: 36px;
 }
 
 .top_messages__span {
@@ -1140,6 +1177,10 @@ i {
 
 i:hover {
   opacity: 0.9;
+}
+
+.icon-left {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=../css/main.css.map */

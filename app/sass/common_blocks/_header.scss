@@ -1,5 +1,10 @@
-.header {
+header {
   background: $background-color;
+}
+.header {
+  display: table;
+  width: 100%;
+
   //line-height: $header-height;
   .container > div {
     vertical-align: middle;
@@ -7,15 +12,19 @@
     white-space: nowrap;
   }
   &__right {
-    width: 40%;
+    //width: 40%;
+    display: table-cell;
+    vertical-align: middle;
   }
   &__left {
-    width: 60%;
+    //width: 60%;
+    display: table-cell;
+    vertical-align: middle;
     padding-left: 125px;
   }
   &__right > div > div {
-    vertical-align: middle;
-    display: inline-block;
+    //vertical-align: middle;
+    //display: inline-block;
   }
   &__school {
     display: inline-block;

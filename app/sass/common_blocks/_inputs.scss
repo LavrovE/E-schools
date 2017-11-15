@@ -68,6 +68,7 @@ button {
   font-size: $main-size;
   line-height: $main-Height;
   cursor: pointer;
+  @include border-radius($input-radius);
   background-color: $white-color;
   font-family: $main-font;
   border: 1px solid $main-color;
@@ -326,6 +327,7 @@ textarea {
     left: 0px;
     top: 24px;
     right: 0px;
+    z-index: 99;
     background: $info-background;
     padding: 0px;
     @include box-shadow($input-shadow);
@@ -360,14 +362,14 @@ textarea {
   vertical-align: middle;
   padding: 0px 15px;
   &__input {
-    padding-left: 20px;
-    line-height: $search-height;
+    //line-height: $search-height;
     border: none;
     @include border-radius(0px);
     background-color: $info-background;
     color: $white-color;
     width: $search-width;
-
+    padding: 10px 0px;
+    padding-left: 20px;
   }
   &__submit {
     position: absolute;
@@ -384,14 +386,12 @@ textarea {
     color: $white-color;
     font-family: $main-font;
     font-size: $main-size;
-    line-height: $search-height;
   }
 
   ::-moz-placeholder {
     color: $white-color;
     font-family: $main-font;
     font-size: $main-size;
-    line-height: $search-height;
   }
 
   /* Firefox 19+ */
@@ -399,7 +399,6 @@ textarea {
     color: $white-color;
     font-family: $main-font;
     font-size: $main-size;
-    line-height: $search-height;
   }
 
   /* Firefox 18- */
@@ -407,7 +406,6 @@ textarea {
     color: $white-color;
     font-family: $main-font;
     font-size: $main-size;
-    line-height: $search-height;
   }
 }
 
@@ -429,8 +427,9 @@ textarea {
     vertical-align: middle;
   }
 }
+
 #help {
-  img{
+  img {
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;

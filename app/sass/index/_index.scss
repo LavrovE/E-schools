@@ -338,4 +338,40 @@ hr.underline{
 }
 .head{
   padding: 10px 0px;
+  &__left{
+
+  }
+  &__right{
+
+  }
+
+}
+.before_inline * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.table{
+  display: table;
+  width: 100%;
+  &__left{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__right{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.edit{
+  color: $btn-color;
+  a{
+    color: $btn-color;
+    font-size: $main-size;
+    font-family: $main-font;
+    line-height: $main-Height;
+  }
+}
+.inline{
+  display:inline-block;
+  vertical-align: middle;
 }
