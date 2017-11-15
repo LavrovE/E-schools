@@ -328,3 +328,14 @@ ul {
 .container.allwrap{
   margin:20px auto;
 }
+hr.underline{
+  border: none;
+  color: $hr-color;
+  background-color: $hr-color;
+  height: 1px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.head{
+  padding: 10px 0px;
+}
