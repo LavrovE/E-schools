@@ -6,6 +6,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+body{
+  background-color: $wrapper-color;
+}
 .container-fluid {max-width: 1920px;}
 .align-right { text-align: right; }
 .align-left { text-align: left; }
