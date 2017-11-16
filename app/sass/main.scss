@@ -23,6 +23,32 @@ a {
 .float-left{
   float: left;
 }
+.table{
+  display: table;
+  width: 100%;
+  &__left{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__right{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.before_inline * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.inline{
+  display:inline-block;
+  vertical-align: middle;
+}
+.v-align-top {
+  vertical-align: top;
+}
+.v-align-middle{
+  vertical-align: middle;
+}
 @import 'media';
 @import "fonts";
 @import "common_blocks/_footer.scss";
